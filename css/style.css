@@ -1,0 +1,315 @@
+/********************************************************
+                    Global 
+*********************************************************/
+html {
+  height: 100%; /*fixed white bar below footer */
+}
+body {
+background: #fafafa;
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
+a {
+	color: #363636;
+}
+
+/********************************************************
+                    Header 
+*********************************************************/
+
+header {
+	width:100%;
+	height: 150px;
+	background-image: url('../img/norwegian_rose.png');
+    background-repeat: repeat;
+    border-bottom: 2px solid #444;
+    box-shadow: 0 0 10px #888;
+}
+
+#logo {
+   width: 40%;
+   height: 150px;
+   margin: 0;
+   padding: 0;
+}
+#logo img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#logo h1 {
+	margin: 0;
+	position: absolute;
+	font-size: 2.5em;
+	top: 40px;
+	left: 150px;
+	font-family: 'Pacifico', cursive;
+	color: #000;
+}
+nav {
+	float: right;
+	clear: left;
+	margin-top: -60px;
+	padding-right: 30px;
+}
+
+nav ul {
+	list-style: none;
+}
+nav li {
+	display: inline;
+	margin-right: 50px;
+}
+
+li a {
+	font-size: 1.5em;
+	display: inline-block;
+}
+
+/********************************************************
+                    Banner
+*********************************************************/
+#wrapper {
+	width: 80%;
+	background: #fafafa;
+	margin: 0 auto;
+}
+
+#banner {
+  width: 100%;
+  height: 150px;
+  margin-top: 50px;
+}
+#banner p {
+	font-size: 1.08rem;
+}
+
+#banner a {
+	color: #25B294;
+}
+#intro {
+	float: left;
+}
+
+#contact {
+	float: right;
+    margin-right: 20px;
+}
+
+#contact ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+/********************************************************
+                    Gallery 
+*********************************************************/
+#gallery {
+  width: 100%;
+  min-height:700px;
+  height: auto;
+  background: #f2f2f2;
+  padding-top: 30px;
+  border: 1px solid #363636;
+}
+#gallery img {
+	width: 175px;
+	height: 175px;
+	margin-bottom: 30px;
+}
+#gallery img:hover {
+    transform:rotate(7deg);
+    -ms-transform:rotate(7deg); /* IE 9 */
+    -webkit-transform:rotate(7deg); /* Opera, Chrome, and Safari */
+}
+
+  #gallery li {
+  display: inline;
+}
+
+.rotate {
+  transform:rotate(90deg);
+  -ms-transform:rotate(90deg); /* IE 9 */
+  -webkit-transform:rotate(90deg); /* Opera, Chrome, and Safari */
+}
+#gallery img.rotate:hover {
+   transform:rotate(97deg);
+    -ms-transform:rotate(97deg); /* IE 9 */
+    -webkit-transform:rotate(97deg); /* Opera, Chrome, and Safari */
+}
+/** Overlay  **/
+#overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height:187%;
+  position:absolute;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+}
+
+#overlay img {
+  margin-top: 20%;
+  height: 300px;
+  width: 300px;
+}
+  
+#overlay p {
+  color:white;
+}
+/********************************************************
+                    Bio
+*********************************************************/
+#bio {
+  width: 100%;
+  margin-top: 50px;
+}
+#bio p {
+  text-align: justify;
+  width: 70%;
+}
+#bio img {
+	float: right;
+	border-radius: 10px;
+}
+
+/********************************************************
+                    Footer
+*********************************************************/
+footer {
+ margin-top: 100px;
+ min-height: 200px;
+ width: 100%;
+ background: #363636;
+ color: #fafafa;
+ text-align: center;
+}
+footer a {
+  color: #25B294;
+}
+
+/********************************************************
+                    Media Queries 
+*********************************************************/
+/** Phones **/ 
+@media screen and (max-width: 460px) {
+  /*** wrapper ***/
+  #wrapper {
+    width: 100%;
+  }
+  /*** header ***/
+  #logo {
+    width: 100%;
+  }
+  #logo img {
+    display: none;
+  }
+  #logo h1 {
+    font-size: 1.5em;
+    position: absolute;
+    left:10%;
+  }
+
+  /*** banner ***/
+  #banner {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    }
+    #contact,  #intro, #contact a, #bio {
+      font-size: .9rem;
+      float: none;
+      line-height: 1.75em;
+    }
+
+ 
+  /*** gallery ***/
+  #gallery {
+  width:100%;
+  margin: 0 auto;
+  }
+  #gallery_list {
+   padding-left: 0;
+   margin: 0;
+  }
+  #gallery_list li {
+    margin: 0;
+    padding: 0;
+  }
+  #gallery img{
+    width: 75px;
+    height: 75px;
+    padding-right: 15px;
+    margin-left: -10px;
+  }
+  /*** bio ***/
+  #bio {
+    width: 90%;
+    margin: 0 auto;
+    clear: right;
+  }
+  #bio img {
+  display: none;
+  }
+  #bio h2, #bio p{
+    width: 90%;
+  }
+  /*** footer ***/
+  footer {
+    height: auto;
+    font-size: .9em;
+  }
+}
+
+
+
+
+
+/** Tablet **/ 
+@media screen and (max-width: 700px) {
+  /*** wrapper ***/
+  #wrapper {
+    width: 100%;
+  }
+  /*** header ***/
+   #contact, #intro {
+    float: none;
+   }
+  /*** banner ***/
+  #banner {
+    width: 90%;
+    margin: 0 auto;
+    }
+  /*** gallery ***/
+  #gallery {
+  width: 90%;
+  margin: 0 auto;
+  }
+  #gallery_list {
+   padding-left: 0;
+   margin: 0;
+  }
+  #gallery_list li {
+    margin: 0;
+    padding: 0;
+  }
+  /*** bio ***/
+  #bio {
+    width: 90%;
+    margin: 0 auto;
+  }
+#bio img {
+float: right;
+border-radius: 10px;
+height: 75px;
+width: 75px;
+margin-right: 1%;
+}
+  /*** footer ***/
+
+}
+
+
