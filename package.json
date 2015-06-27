@@ -1,0 +1,22 @@
+{
+  "name": "gulpTutorial",
+  "version": "1.0.0",
+  "description": "gulp testing",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.7.12",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-uglify": "^1.2.0"
+  }
+}
